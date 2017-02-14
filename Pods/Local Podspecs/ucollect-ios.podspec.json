@@ -1,0 +1,44 @@
+{
+  "name": "ucollect-ios",
+  "version": "1.0.0",
+  "summary": "U-collect In-App iOS Payment SDK",
+  "description": "iOS In-App Payment SDK for U-collect merchants",
+  "homepage": "https://github.com/ItexIntegrated/ucollect-ios",
+  "license": {
+    "type": "Apache 2.0",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Itex Integrated Systems Ltd": "email@address.com"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "source": {
+    "git": "https://github.com/ItexIntegrated/UcollectiOS.git",
+    "tag": "1.0.0"
+  },
+  "source_files": [
+    "UcollectMobile",
+    "UcollectMobile/**/*.{h,m,swift}"
+  ],
+  "exclude_files": "UcollectMobile/Exclude",
+  "dependencies": {
+    "IDZSwiftCommonCrypto": [
+
+    ],
+    "Alamofire": [
+
+    ],
+    "AlamofireObjectMapper": [
+
+    ],
+    "Bolts-Swift": [
+
+    ]
+  },
+  "frameworks": [
+    "UIKit",
+    "WebKit"
+  ]
+}

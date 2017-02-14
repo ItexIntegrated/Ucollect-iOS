@@ -1,0 +1,6 @@
+framework module Ucollect {
+  umbrella header "Ucollect-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WebViewController" customModule="UcollectMobile"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="ndf-FB-Se5" customClass="WebkitView" customModule="UcollectMobile" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mw0-zC-rYE" customClass="WebkitView" customModule="UcollectMobile">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l06-yA-zmI">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FTw-tn-Yv8">
+                            <rect key="frame" x="67" y="263" width="240" height="140"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Processing" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GTs-5q-nio">
+                                    <rect key="frame" x="8" y="92" width="224" height="21"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="ddn-Xc-pQM">
+                                    <rect key="frame" x="102" y="36" width="37" height="37"/>
+                                    <color key="color" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </activityIndicatorView>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="ddn-Xc-pQM" secondAttribute="trailing" constant="101" id="0dz-Bj-I2c"/>
+                                <constraint firstAttribute="bottom" secondItem="ddn-Xc-pQM" secondAttribute="bottom" constant="67" id="Auy-2o-jca"/>
+                                <constraint firstItem="GTs-5q-nio" firstAttribute="top" secondItem="ddn-Xc-pQM" secondAttribute="bottom" constant="19" id="HlY-wg-AGT"/>
+                                <constraint firstAttribute="width" constant="240" id="QbE-Ua-aWY"/>
+                                <constraint firstItem="GTs-5q-nio" firstAttribute="leading" secondItem="FTw-tn-Yv8" secondAttribute="leading" constant="8" id="S46-ON-Tcy"/>
+                                <constraint firstItem="ddn-Xc-pQM" firstAttribute="leading" secondItem="FTw-tn-Yv8" secondAttribute="leading" constant="102" id="ZYF-Kg-Xca"/>
+                                <constraint firstItem="ddn-Xc-pQM" firstAttribute="top" secondItem="FTw-tn-Yv8" secondAttribute="top" constant="36" id="bOS-JR-cHa"/>
+                                <constraint firstItem="ddn-Xc-pQM" firstAttribute="centerX" secondItem="FTw-tn-Yv8" secondAttribute="centerX" id="ciz-nL-qYp"/>
+                                <constraint firstAttribute="height" constant="140" id="ope-as-dNM"/>
+                                <constraint firstAttribute="trailing" secondItem="GTs-5q-nio" secondAttribute="trailing" constant="8" id="wsE-RO-XIE"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="9"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.71817231510000001" colorSpace="custom" customColorSpace="sRGB"/>
+                    <accessibility key="accessibilityConfiguration">
+                        <accessibilityTraits key="traits" notEnabled="YES"/>
+                    </accessibility>
+                    <constraints>
+                        <constraint firstItem="FTw-tn-Yv8" firstAttribute="centerY" secondItem="l06-yA-zmI" secondAttribute="centerY" id="lPz-54-MIb"/>
+                        <constraint firstItem="FTw-tn-Yv8" firstAttribute="centerX" secondItem="l06-yA-zmI" secondAttribute="centerX" id="u0e-zi-BBn"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Mw0-zC-rYE" secondAttribute="trailing" id="8oF-JU-2uj"/>
+                <constraint firstItem="l06-yA-zmI" firstAttribute="width" secondItem="ndf-FB-Se5" secondAttribute="width" id="EpA-vw-67H"/>
+                <constraint firstItem="Mw0-zC-rYE" firstAttribute="width" secondItem="ndf-FB-Se5" secondAttribute="width" id="EuQ-h2-wtZ"/>
+                <constraint firstItem="Mw0-zC-rYE" firstAttribute="leading" secondItem="ndf-FB-Se5" secondAttribute="leading" id="HwZ-kE-7u8"/>
+                <constraint firstItem="Mw0-zC-rYE" firstAttribute="top" secondItem="ndf-FB-Se5" secondAttribute="top" id="Idk-U2-C3X"/>
+                <constraint firstItem="l06-yA-zmI" firstAttribute="height" secondItem="ndf-FB-Se5" secondAttribute="height" id="OYh-WU-PgJ"/>
+                <constraint firstAttribute="trailing" secondItem="l06-yA-zmI" secondAttribute="trailing" id="fGF-Tc-405"/>
+                <constraint firstItem="l06-yA-zmI" firstAttribute="top" secondItem="ndf-FB-Se5" secondAttribute="top" id="gI2-sZ-10D"/>
+                <constraint firstItem="l06-yA-zmI" firstAttribute="leading" secondItem="ndf-FB-Se5" secondAttribute="leading" id="iOC-um-1fG"/>
+                <constraint firstItem="Mw0-zC-rYE" firstAttribute="height" secondItem="ndf-FB-Se5" secondAttribute="height" id="wEW-rG-wbc"/>
+            </constraints>
+            <connections>
+                <outlet property="progressLayout" destination="l06-yA-zmI" id="rbT-cd-Fv4"/>
+                <outlet property="wkView" destination="Mw0-zC-rYE" id="J53-hk-Cas"/>
+            </connections>
+            <point key="canvasLocation" x="26.5" y="787.5"/>
+        </view>
+    </objects>
+</document>
