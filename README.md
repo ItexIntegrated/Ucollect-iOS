@@ -1,8 +1,8 @@
 # ucollect-ios
 U-collect in-app payment SDK for iOS.
 
-##Installation
-####CocoaPods
+## Installation
+#### CocoaPods
 Add the following line to your pod file
 
 ```pod
@@ -10,15 +10,15 @@ pod 'Ucollect','~> 1.0.2'
     
 ```
 
-##Usage
-###Initialization
+## Usage
+### Initialization
 ```swift
-
+    
 var requestManager : RequestManager!
 
 self.requestManager =  try? RequestManager.initialize(context: self, merchantID: merchantID, merchantKey: merchantKey) 
  ```
-###Test Mode
+### Test Mode
 To activate testing mode
 
 Add the following line after initializing the RequestManager
@@ -37,7 +37,7 @@ Add this exception to your info.plist file.
 Remove the exception when testing is complete.
 
 
-###Building Transaction Request
+### Building Transaction Request
 To start a transaction, let your ViewController implement the TransactionCallback protocol
 ```swift
  
@@ -78,7 +78,7 @@ To start a transaction, let your ViewController implement the TransactionCallbac
  ```
 
 
-###Authorizing Transactions
+### Authorizing Transactions
 When a transaction needs to be authorized using OTP, implement the onRequestAuthorization, and call requestManager.authorizeTransaction(otp);
 
 ```swift
@@ -109,7 +109,7 @@ When a transaction needs to be authorized using OTP, implement the onRequestAuth
     }
  ```
 
-###Querying Transaction Status
+### Querying Transaction Status
 To query the status of an on-going or already complete transaction
 ```swift
 String merchantGeneratedReferenceNumber = "14811308291201"; // Previous Transaction's Merchant Generated Reference Number
