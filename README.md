@@ -6,7 +6,7 @@ U-collect in-app payment SDK for iOS.
 Add the following line to your pod file
 
 ```pod
-pod 'Ucollect','~> 1.0.2'
+pod 'Ucollect','~> 2.0.0'
     
 ```
 
@@ -114,4 +114,22 @@ To query the status of an on-going or already complete transaction
 ```swift
 String merchantGeneratedReferenceNumber = "14811308291201"; // Previous Transaction's Merchant Generated Reference Number
 self.requestManager.queryTransactionStatus(merchantGeneratedReferenceNumber: "14811308291201", resultCallback: self);
+```
+### Handling Result
+```swift
+ func onTransactionError(error: Error) {
+        showProgress(show: false)
+        showMessage(title: "Transaction Failed", message: "\(error)")
+        print(error)
+    }
+    
+    func onTransactionComplete(result: TransactionResult) {
+        showProgress(show: false)
+        
+        let title = result.getStatus() == .APPROVED ? "Transaction Successful" : "Transaction Declined"
+        
+        showMessage(title: title, message: result.getDetails())
+        print(result.toJSON())
+        
+    }
 ```
