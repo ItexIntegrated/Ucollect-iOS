@@ -115,11 +115,10 @@ class ViewController: UIViewController, TransactionCallback{
     
     func onTransactionComplete(result: TransactionResult) {
         showProgress(show: false)
-        let status =  Int(result.Status)
         
-        let title = status == 0 ? "Transaction Successful" : "Transaction Declined"
+        let title = result.getStatus() == .APPROVED ? "Transaction Successful" : "Transaction Declined"
         
-        showMessage(title: title, message: result.Message)
+        showMessage(title: title, message: result.getDetails())
         print(result.toJSON())
         
     }
@@ -185,6 +184,7 @@ class ViewController: UIViewController, TransactionCallback{
         
         self.show(alertController, sender: nil)
     }
+    
     
     
 }

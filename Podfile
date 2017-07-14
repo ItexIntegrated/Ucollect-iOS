@@ -7,7 +7,7 @@ target 'UcollectTestApp' do
 
   # Pods for UcollectTestApp
 
-  pod 'Ucollect','~> 1.0.0'
+  pod 'Ucollect','~> 2.0.0'
 
   
   target 'UcollectTestAppTests' do

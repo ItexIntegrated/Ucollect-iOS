@@ -132,7 +132,7 @@ public final class RequestManager{
             return nil
         }
         
-        let requestString = NSString(data: jsonData, encoding: String.Encoding.utf8.rawValue) as! String
+        let requestString = NSString(data: jsonData, encoding: String.Encoding.utf8.rawValue)! as String
         
         return requestString
     }
@@ -148,7 +148,7 @@ public final class RequestManager{
             return nil
         }
         
-        let requestString = NSString(data: jsonData, encoding: String.Encoding.utf8.rawValue) as! String
+        let requestString = NSString(data: jsonData, encoding: String.Encoding.utf8.rawValue)! as String
         
         return requestString
         
@@ -166,7 +166,7 @@ public final class RequestManager{
             return nil
         }
         
-        let requestString = NSString(data: jsonData, encoding: String.Encoding.utf8.rawValue) as! String
+        let requestString = NSString(data: jsonData, encoding: String.Encoding.utf8.rawValue)! as String
         
         return requestString
         
